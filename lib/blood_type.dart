@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:trial_app/find_donor.dart';
 import 'package:trial_app/life_share.dart';
 
+import 'finder_loading_screen.dart';
+
 class BloodType extends StatefulWidget {
   @override
   _BloodTypeState createState() => _BloodTypeState();
@@ -331,7 +333,7 @@ class _BloodTypeState extends State<BloodType> {
                         context,
                         MaterialPageRoute(
                           // builder: (context) =>  MyLocation(),
-                          builder: (context) => FindDonor(_BloodTypes),
+                          builder: (context) => findloadingscreen(_BloodTypes),
                         ),
                       );
                     },
